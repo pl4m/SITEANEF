@@ -1,0 +1,174 @@
+/* Réinitialisation de certains styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* Styles de base */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #494949;
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* En-tête */
+header {
+    background: #494949;
+    color: #fff;
+    padding: 20px 0; /* Espacement vertical augmenté */
+    text-align: center; /* Centrage du contenu */
+    border-bottom: 5px solid #E95B22;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 20px 0; /* Espacement vertical augmenté */
+    text-align: center; /* Centrage du contenu */
+}
+
+/* Navigation */
+nav {
+    margin: 0 auto;
+}
+
+nav ul.main-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrage des éléments de menu */
+    gap: 20px;
+}
+
+nav .main-menu > li {
+    position: relative;
+    margin-left: 20px;
+}
+
+nav .main-menu > li a {
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 20px;
+}
+
+/* Effet de survol pour les liens de navigation */
+nav .main-menu > li a:hover {
+    background-color: #E95B22;
+    color: #fff;
+}
+
+/* Sous-menus */
+nav .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #494949;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+nav .main-menu > li:hover .sub-menu {
+    display: block;
+}
+
+nav .sub-menu li {
+    display: block;
+    text-align: center;
+}
+
+nav .sub-menu li a {
+    padding: 10px;
+    color: #fff;
+    text-transform: none;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+/* Changement de couleur pour les liens des sous-menus au survol */
+nav .sub-menu li a:hover {
+    background-color: #E95B22;
+}
+
+/* Styles du contenu principal */
+main {
+    max-width: 1200px; /* Largeur maximale pour les grands écrans */
+    margin: 50px auto; /* Centrage et aération */
+    padding: 0 20px;
+    overflow: hidden; /* Clears the floats */
+}
+
+h1, h2 {
+    color: #494949;
+}
+
+/* Styles des sections */
+section {
+    margin: 40px 0;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Ombre douce */
+}
+
+/* Formulaires et boutons */
+button, input[type="submit"] {
+    background: #E95B22;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #cc4c1a;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #E95B22;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical; /* Permet aux utilisateurs de changer la taille verticalement */
+}
+
+/* Pied de page */
+footer {
+    background: #494949;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
